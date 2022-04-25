@@ -6,7 +6,7 @@ const AboutPage = () => {
       <MetaTags title="About" description="About page" />
 
       <h1>AboutPage</h1>
-      <p>I'm Gilux. That's all you need to know</p>
+      <p>I&lsquo;m Gilux. That&lsquo;s all you need to know</p>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import { Link, NavLink, routes } from '@redwoodjs/router'
+import { NavLink, routes } from '@redwoodjs/router'
 
 const BlogLayout = ({ children }) => {
   return (

@@ -6,7 +6,7 @@ const HomePage = () => {
       <MetaTags title="Home" description="Home page" />
 
       <h1>Home</h1>
-      <p>Hello bro'</p>
+      <p>Hello bro&lsquo;</p>
     </>
   )
 }
