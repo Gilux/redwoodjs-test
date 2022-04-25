@@ -1,4 +1,4 @@
-import { Link, routes } from '@redwoodjs/router'
+import { Link, NavLink, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 
 const HomePage = () => {
@@ -6,14 +6,23 @@ const HomePage = () => {
     <>
       <MetaTags title="Home" description="Home page" />
 
-      <h1>HomePage</h1>
-      <p>
-        Find me in <code>./web/src/pages/HomePage/HomePage.js</code>
-      </p>
-      <p>
-        My default route is named <code>home</code>, link to me with `
-        <Link to={routes.home()}>Home</Link>`
-      </p>
+      <header>
+        <h1>Redwood Blog</h1>
+        <nav>
+          <ul>
+            <li>
+              <Link to={routes.about()}>About</Link>
+              <NavLink activeClassName="activeLink" to={routes.about()}>
+                About
+              </NavLink>
+              <NavLink activeClassName="activeLink" to={routes.home()}>
+                Home
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>Home</main>
     </>
   )
 }
