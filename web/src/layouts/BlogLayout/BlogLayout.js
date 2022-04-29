@@ -14,6 +14,9 @@ const BlogLayout = ({ children }) => {
               <NavLink activeClassName="activeLink" to={routes.about()}>
                 About
               </NavLink>
+              <NavLink activeClassName="activeLink" to={routes.contact()}>
+                Contact Us
+              </NavLink>
             </li>
           </ul>
         </nav>
